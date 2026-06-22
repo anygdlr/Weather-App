@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-box">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-submit" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">City</h1>
+            <p class="weather-details">
+              Date and time, condition.
+              <br />
+              Humidity <strong>value</strong>, Wind <strong>value</strong>
+            </p>
+          </div>
+          <div class="weather-temperature">
+            <div class="weather-temperature-icon">⛅️</div>
+            <div class="weather-temperature-value">30</div>
+            <div class="weather-temperature-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://linkedin.com/in/anygdlr" target="_blank">
+          Ana Gonzalez</a
+        >
+        and is on
+        <a href="https://github.com/anygdlr"> GitHub </a>
+        and hosted on
+        <a href="https://anygdlr-ops-challenge.netlify.app"> Netlify</a>
+      </footer>
+    </div>
+  </body>
+</html>
