@@ -11,16 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="main-box">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="search-form-input"
+            id="city-received"
           />
           <input type="submit" value="Search" class="search-form-submit" />
         </form>
@@ -28,16 +30,18 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city">City</h1>
+            <h1 class="weather-city" id="city">Queretaro</h1>
             <p class="weather-details">
-              Date and time, condition.
+              <span id="current-date"></span>, condition.
               <br />
               Humidity <strong>value</strong>, Wind <strong>value</strong>
             </p>
           </div>
           <div class="weather-temperature">
             <div class="weather-temperature-icon">⛅️</div>
-            <div class="weather-temperature-value">30</div>
+            <div class="weather-temperature-value" . id="current-temperature">
+              30
+            </div>
             <div class="weather-temperature-unit">°C</div>
           </div>
         </div>
@@ -56,4 +60,5 @@
       </footer>
     </div>
   </body>
+  <script src="src/index.js"></script>
 </html>
