@@ -30,17 +30,20 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city" id="city">Queretaro</h1>
+            <h1 class="weather-city" id="city">The Weather App</h1>
             <p class="weather-details">
-              <span id="current-date"></span>, condition.
+              <span id="current-date"></span><span>,</span>
+              <span id="current-condition">-</span>.
               <br />
-              Humidity <strong>value</strong>, Wind <strong>value</strong>
+              Humidity <strong id="current-humidity">-</strong>, Wind
+              <strong id="current-wind">-</strong>
+              <strong id="current-wind-unit"> km/hr</strong>
             </p>
           </div>
           <div class="weather-temperature">
-            <div class="weather-temperature-icon">⛅️</div>
+            <div class="weather-temperature-icon" id="weather-icon"></div>
             <div class="weather-temperature-value" . id="current-temperature">
-              30
+              -
             </div>
             <div class="weather-temperature-unit">°C</div>
           </div>
