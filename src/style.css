@@ -62,7 +62,7 @@ justify-content: space-between;
 }
 
 .weather-details strong {
-    color: rgb(210, 48, 99);
+    color: #f65282;
 }
 
 .weather-temperature {
@@ -82,6 +82,50 @@ justify-content: space-between;
 .weather-temperature-unit {
     font-size: 35px;
     padding: 10px 0 0 0;
+}
+
+.weather-forecast {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast-date{
+    color: gray;
+    text-align: center;
+    line-height: 50px;
+}
+
+.forecast-day-temp{
+    display: flex;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+    color: #f65282;
+    margin-top: 10px;
+}
+
+.forecast-icon{
+    font-size: 39px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.forecast-max-temp{
+    padding: 0 5px;
+}
+
+.forecast-min-temp{
+    padding: 0 5%;
+    color: #f65282;
+    opacity: 70%;
+}
+
+.forecast-temp-unit{
+    margin: 0;
+    padding: 0;
 }
 
 footer {
